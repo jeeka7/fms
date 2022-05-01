@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 st.write("List of waitlisted candidates of 2022 FMS batch")
 waitlisted=pd.read_csv("https://raw.githubusercontent.com/jeeka7/fms/main/MBAFT_WAITLIST_PWD_2022.csv")
@@ -32,3 +33,9 @@ if option=='pwd5':
 if option=='pwd6':
 	st.write(pwd6)
 	st.write(len(pwd6.index),"people were selected in this category",)
+pie_chart = px.pie(weapons,
+                title='Viklaang LOG',
+                values='Category',
+                names='Name')
+
+st.plotly_chart(pie_chart)
