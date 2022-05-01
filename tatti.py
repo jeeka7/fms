@@ -16,6 +16,7 @@ option = st.selectbox('what category you wnt to see?',('pwd1', 'pwd2', 'pwd3','p
 st.write('You selected:', option)
 if option=='pwd1':
 	st.write(pwd1)
+	st.write("selected people were",len(pwd1.index))
 if option=='pwd2':
 	st.write(pwd2)
 if option=='pwd3':
