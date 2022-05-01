@@ -33,7 +33,7 @@ if option=='pwd5':
 if option=='pwd6':
 	st.write(pwd6)
 	st.write(len(pwd6.index),"people were selected in this category",)
-pie_chart = px.pie(weapons,
+pie_chart = px.pie(waitlisted,
                 title='Viklaang LOG',
                 values='Category',
                 names='Name')
