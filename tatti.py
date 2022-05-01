@@ -16,14 +16,19 @@ option = st.selectbox('what category you wnt to see?',('pwd1', 'pwd2', 'pwd3','p
 st.write('You selected:', option)
 if option=='pwd1':
 	st.write(pwd1)
-	st.write("selected people were",len(pwd1.index))
+	st.write(len(pwd1.index),"people were selected in this category",)
 if option=='pwd2':
 	st.write(pwd2)
+	st.write(len(pwd2.index),"people were selected in this category",)
 if option=='pwd3':
 	st.write(pwd3)
+	st.write(len(pwd3.index),"people were selected in this category",)
 if option=='pwd4':
 	st.write(pwd4)
+	st.write(len(pwd4.index),"people were selected in this category",)
 if option=='pwd5':
 	st.write(pwd5)
+	st.write(len(pwd5.index),"people were selected in this category",)
 if option=='pwd6':
 	st.write(pwd6)
+	st.write(len(pwd6.index),"people were selected in this category",)
