@@ -33,6 +33,12 @@ if option=='pwd5':
 if option=='pwd6':
 	st.write(pwd6)
 	st.write(len(pwd6.index),"people were selected in this category",)
+details = {
+    'Category' : ['PWD1', 'PWD2', 'PWD3', 'PWD4','PWD5','PWD6'],
+    'Total Students' : [len(pwd1.index), len(pwd2.index), len(pwd3.index), len(pwd4.index),len(pwd5.index),len(pwd6.index)],
+}
+students = pd.DataFrame(details)
+st.write(students)
 pie_chart = px.pie(waitlisted,
                 title='Viklaang LOG',
                 values='Category',
