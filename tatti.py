@@ -38,7 +38,7 @@ details = {
     'Total Students' : [len(pwd1.index), len(pwd2.index), len(pwd3.index), len(pwd4.index),len(pwd5.index),len(pwd6.index)],
 }
 students = pd.DataFrame(details)
-students.style.set_properties(**{'text-align': 'left'})
+students.Description = students.Description.apply(lambda row: row.lstrip(' '))
 st.write(students)
 pie_chart = px.pie(students,
                 title='Viklaang LOG',
