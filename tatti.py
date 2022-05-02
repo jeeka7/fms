@@ -39,9 +39,9 @@ details = {
 }
 students = pd.DataFrame(details)
 st.write(students)
-pie_chart = px.pie(waitlisted,
+pie_chart = px.pie(students,
                 title='Viklaang LOG',
-                values='Category',
-                names='Name')
+                values='Total Students',
+                names='Category')
 
 st.plotly_chart(pie_chart)
